@@ -2993,7 +2993,9 @@ FMT_INLINE void print(std::FILE* f, format_string<T...> fmt, T&&... args) {
 }
 
 FMT_MODULE_EXPORT_END
+#if !defined(ESP_PLATFORM)
 FMT_GCC_PRAGMA("GCC pop_options")
+#endif
 FMT_END_NAMESPACE
 
 #ifdef FMT_HEADER_ONLY
