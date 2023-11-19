@@ -1,6 +1,7 @@
 // Slightly modified version of fmt lib's format.cc (version 1.9.1) source file.
 // Copyright (c) 2012 - 2016, Victor Zverovich
 // All rights reserved.
+#define SPDLOG_COMPILED_LIB
 
 #ifndef SPDLOG_COMPILED_LIB
 #    error Please define SPDLOG_COMPILED_LIB to compile this file.
